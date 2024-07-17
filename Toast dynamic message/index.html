@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast dynamic message</title>
+    <link rel="stylesheet" href="./asset/CSS/main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row py-5 text-center">
+            <div class="col-12 input-group">
+                <input type="text" class="form-control" name="content" placeholder="Toast content">
+                <select class="form-select" name="type">
+                    <option value="" selected>Toast type</option>
+                    <option value="primary">Primary</option>
+                    <option value="secondary">Secondary</option>
+                    <option value="success">Success</option>
+                    <option value="danger">Danger</option>
+                    <option value="warning">Warning</option>
+                    <option value="info">Info</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+                <select class="form-select" name="position">
+                    <option value="" selected>Toast position</option>
+                    <option value="top-0,end-0">Top Right</option>
+                    <option value="bottom-0,end-0">Bottom Right</option>
+                    <option value="bottom-0,start-0">Bottom Left</option>
+                    <option value="top-0,start-0">Top Left</option>
+                </select>
+                <button id="create-toast" class="btn btn-primary">Create a Toast</button>
+            </div>
+        </div>
+    </div>
+    <div aria-live="polite" aria-atomic="true">
+        <div class="toast-container position-absolute p-3" id="toast-container" style="z-index:9;"></div>
+    </div>
+    <script src="./asset/JS/index.js"></script>
+</body>
+
+</html>
