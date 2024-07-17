@@ -1,17 +1,17 @@
-document.querySelector('#create-toast').addEventListener('click', function() {
-    document.querySelector('#toast-container').classList.remove('top-0','end-0','bottom-0','start-0');
+document.querySelector('#create-toast').addEventListener('click', function () {
+    document.querySelector('#toast-container').classList.remove('top-0', 'end-0', 'bottom-0', 'start-0');
 
-    var content = (document.querySelector('input[name=content]').value != '') 
-        ? document.querySelector('input[name=content]').value 
+    var content = (document.querySelector('input[name=content]').value != '')
+        ? document.querySelector('input[name=content]').value
         : 'Lorem ipsum dolor sit amet';
 
-    var type = (document.querySelector('select[name=type]').value != '') 
-        ? document.querySelector('select[name=type]').value 
+    var type = (document.querySelector('select[name=type]').value != '')
+        ? document.querySelector('select[name=type]').value
         : 'success';
 
-    var position = (document.querySelector('select[name=position]').value != '') 
+    var position = (document.querySelector('select[name=position]').value != '')
         ? document.querySelector('select[name=position]').value.split(',')
-        : ['top-0','end-0'];
+        : ['top-0', 'end-0'];
 
     showToast(content, type, position);
 });
@@ -25,7 +25,7 @@ function showToast(content, type, position) {
     var toast = htmlToElement(html);
     var toastContainer = document.querySelector("#toast-container");
     toastContainer.appendChild(toast);
-    var toast = new bootstrap.Toast(toast, {delay:delay, animation:true});
+    var toast = new bootstrap.Toast(toast, { delay: delay, animation: true });
     toast.show();
     setTimeout(() => toast.remove(), delay + 15000);
 }
