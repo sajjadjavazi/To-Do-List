@@ -20,4 +20,4 @@ This is a simple To-Do List application built with Bootstrap 5 and JavaScript. I
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/sajjadjavazi/Practice6/blob/master/LICENSE "LICENSE") file for details.
+This project is licensed under the MIT License, See the [LICENSE](https://github.com/sajjadjavazi/Practice6/blob/master/LICENSE "LICENSE") file for details.
