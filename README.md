@@ -1,4 +1,4 @@
-# To-Do List App | [Demo](https://sajjadjavazi.github.io/Practice6/ "Demo")
+# To-Do List App | [Demo](https://sajjadjavazi.github.io/To-Do-List/ "Demo")
 
 This is a simple To-Do List application built with Bootstrap 5 and JavaScript. It allows users to manage tasks with features to add, view, edit, and delete tasks. The app is fully responsive and user-friendly.
 
